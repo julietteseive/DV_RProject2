@@ -1,0 +1,73 @@
+---
+title: "Project 2 Doc"
+output: html_document
+---
+
+Created by: David Tran, Juliette Seive, Boris Boukhonine
+
+*"Catches of fish, crustaceans, molluscs and other aquatic organisms are reported in whole tonnes live weight (TLW) per species, fishing area, country and year."*
+
+**Countries Key**
+
+Code  Country
+BG	 Bulgaria
+ES	 Spain
+DK	 Denmark
+DE	 Germany
+BE	 Belgium
+IE	 Ireland
+EE	 Estonia
+FR	 France
+IT	 Italy
+LV	 Latvia
+LT	 Lithuania
+NL	 Netherlands
+PL	 Poland
+PT	 Portugal
+RO	 Romania
+FI	 Finland
+SE	 Sweden
+UK	 United Kingdom (E+W+S+NI)
+UKM	 Scotland
+IS	 Iceland
+NO	 Norway
+FO	 Faeroe Islands (DK)
+GG	 Guernsey
+IM	 Isle of Man
+JE	 Jersey
+RU	 Russia
+SJ	 Svalbard and Jan Mayen
+UA	 Ukraine
+LY	 Libya
+CV	 Cape Verde
+GL	 Greenland (DK)
+US	 United States
+PA	 Panama
+CN	 China (including Hong Kong)
+JP	 Japan
+KR	 South Korea
+TW	 Taiwan
+OUT	 Outbound
+
+**Plots are as follows**\
+
+1) Total fish weights by species per country for 2013 \ 
+
+2) Counted fish weights for various species from 2007 to 2013 for France
+Filtered out all weight below 10000 tons.\ 
+
+3) Comparison of France and Spain over years\ 
+Filtered out all weights below 10000 tons
+
+**Load packages and fetch data**
+```{r}
+source("../01 Data/package_loader.R", echo = TRUE)
+source("../01 Data/dataframe.R", echo=TRUE)
+```
+
+**Wrangle the data**
+```{r}
+source("../02 Data_Wrangling/wrangling.R", echo=TRUE)
+
+```
+
